@@ -1,0 +1,13 @@
+# tester stuff
+test.cpp
+test.java
+test.py
+test.class
+
+# constraints
+constraints.json
+
+# compiled code
+validators/
+solutions/
+generators/
