@@ -1,0 +1,32 @@
+Arav’s teacher asks him to sort an array from least to greatest with merge sort, but he has forgotten how the algorithm works! Specifically, he has forgotten how to merge two sorted arrays.
+<br><br>
+Each of the two arrays can be represented as a series of $N$ blocks of contiguous elements. Each block is defined by a number $n_i$ that is repeated $l_i$ times. For example, $l_i=4$ and $n_i=10$ represents the block $[10, 10, 10, 10]$. In addition, the blocks are sorted, so for each $1 < i \le N$, $n_{i-1} \le n_i$.
+<br><br>
+Given the blocks that make up the sorted arrays, please help Arav find the number of comparisons necessary to merge them.
+<br><br>
+<h3>Input</h3>
+The first line contains $N (1 \le N \le 10^5)$ - the number of blocks in each array.<br>
+The next $N$ lines contain $l_i (1 \le l_i \le 10^9)$ and $n_i (1 \le n_i \le 10^9)$ for the first array.<br>
+After that, the next $N$ lines contain $l_i$ and $n_i$ for the second array. All $n_i$ are distinct across both arrays.
+<h3>Output</h3>
+Print a single integer: the answer to the problem.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>5
+1 2
+2 4
+1 6
+5 18
+3 19
+3 3
+2 5
+1 8
+2 17
+5 20</codeblock>
+<b>Sample Output</b><br>
+<codeblock>20</codeblock>
+<h3>Note</h3>
+The first comparison compares the first 2 with the first 3.
+<br><br>
+Subtask 1: $l_i = 1$ <br>
+Subtask 2: No additional constraints

@@ -1,0 +1,34 @@
+Rishikesh was exploring the multiverse and found a 2D universe that has portals in it.
+<br><br>
+Rishikesh is currently at time $t=0$ at cell $(1,1)$ (bottom left) on the grid and is trying to get to $(N,N)$ (top right). There are $M$ $0$-indexed portals on the grid. Each portal is at a cell $(x_i,y_i)$.
+<br><br>
+If Rishikesh is at cell $(x_i,y_i)$ at time $t$, he can choose to move to portal $(i+t)$ mod $M$. Rishikesh can also move left, right, up, or down in 1 second. Find the minimum amount of time to get to cell $(N,N)$.
+<br><br>
+Note that it takes $0$ seconds to go through a portal. This also implies that multiple portals can be used in the same second.
+<br>
+<h3>Input</h3>
+The first line contains two integers $N$ and $M$ $(1 \le N \le 10^9, 1 \le M \le 10^5)$.
+<br><br>
+The next $M$ lines each contain 2 integers $x_i$ and $y_i$ $(1 \le x_i,y_i \le N)$.
+<br>
+<h3>Output</h3>
+Output a single integer, the minimum time to get from $(1,1)$ to $(N,N)$.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>10 5
+2 3
+8 1
+5 7
+9 9
+3 6</codeblock>
+<b>Sample Output</b><br>
+<codeblock>5
+</codeblock>
+<br><h3>Note</h3>
+Go from $(1,1)$ $\rightarrow$ $(1,2)$ $\rightarrow$ $(2,2)$ $\rightarrow$ $(2,3)$ in $3$ seconds. Go to portal $(3+0) \bmod 5 = 3$ at position $(9,9)$ $\rightarrow$ $(10,9)$ $\rightarrow$ $(10,10)$ in $2$ seconds for a total of $5$ seconds.
+<br><br>
+Subtask 1: $N \le 1000$
+<br>
+Subtask 2: $M \le 1000$
+<br>
+Subtask 3: No additional constraints

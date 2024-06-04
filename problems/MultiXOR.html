@@ -1,0 +1,36 @@
+Suvanth is learning about the XOR operation (denoted by $\oplus$) in his AP CSA class. To test him, his teacher told him to replace each number in the array $a$ of length $N$ by the xor of every other number. 
+<br><br>
+Formally, in the new array $v$, $v_i = a_1\oplus a_2\oplus ...\oplus a_{i-1}\oplus a_{i+1} \oplus ... \oplus a_N$. Now replace $a$ with $v$.
+<br><br>
+Suvanth found this problem to be trivial, so you have to do this operation $k$ times on the array $a$ and print the result.
+<h3>Input</h3>
+The first line contains 2 integers, $N$ and $k$ $(1 \le N \le 10^5, 1 \le k \le 10^9)$.<br>
+The next line contains $N$ integers $a_1,a_2,...,a_N$ $(1 \le a_i \le 10^9)$.
+<h3>Output</h3>
+The first line should contain $N$ integers, the array $a$ after performing the operation $k$ times.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>6 1
+4 5 2 1 9 7</codeblock>
+<b>Sample Output</b><br>
+<codeblock>8 9 14 13 5 11</codeblock>
+<h3>Note</h3>
+$5\oplus 2\oplus 1\oplus 9\oplus 7 = 8$
+<br>
+$4\oplus 2\oplus 1\oplus 9\oplus 7 = 9$
+<br>
+$4\oplus 5\oplus 1\oplus 9\oplus 7 = 14$
+<br>
+$4\oplus 5\oplus 2\oplus 9\oplus 7 = 13$
+<br>
+$4\oplus 5\oplus 2\oplus 1\oplus 7 = 5$
+<br>
+$4\oplus 5\oplus 2\oplus 1\oplus 9 = 11$
+<br><br>
+Since $k = 1$, this operation is only done once so that is the answer
+<br><br>
+Subtask 1: $N \le 10^3, k \le 10$
+<br>
+Subtask 2: $k \le 10$
+<br>
+Subtask 3: No additional constraints

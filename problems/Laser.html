@@ -1,0 +1,34 @@
+On an $N$ by $N$ grid, Arav wants a laser going horizontally through $(1, 1)$ to pass through $(N, N)$ for his science project. To that end, he has placed some mirrors on the grid to redirect the laser to its destination.
+<br><br>
+He has just realized, however, that his configuration of mirrors doesn't actually reflect the laser to $(N, N)$! Even worse, he glued all the mirrors to the grid and now they can't be moved. 
+<br><br>
+Find the minimum number of new mirrors Arav must add to finish his science project.
+<h3>Input</h3>
+The first line contains $N$ $(1 \le N \le 10^3)$ - the size of the grid.
+<br>
+The next $N$ lines contain $N$ characters each, with '_' for an empty tile and '/' , '\' for a mirror.
+<br>
+It is guaranteed that there is a valid solution.
+<h3>Output</h3>
+Output $N$ lines, each with $N$ characters. Each line should be the configuration of the grid after the mirrors have been placed. The solution should contain the minimum number of mirrors. If there are multiple solutions with the minimum number of mirrors, output any of them.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>5
+____\
+_\___
+____/
+_____
+_\___</codeblock>
+<b>Sample Output</b><br>
+<codeblock>
+____\
+_\___
+_/__/
+_____
+_\___</codeblock>
+<h3>Note</h3>
+Note that $(1, 1)$ is located at the top left corner and $(N, N)$ is at the bottom right corner.
+<br><br>
+Subtask 1: $N \le 20$
+<br>
+Subtask 2: No additional constraints

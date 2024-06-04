@@ -1,0 +1,31 @@
+Define a sequence $F$ as follows: $F_1 = F_2 = 1$, and $F_n = F_{n-1} + F_{n-2}$ for $n \ge 3$. Define $ans_i$ as the minimum length of a sequence $S$ such that $\sum S = i$ and $j \in F$ for all $j \in S$.
+<br><br>
+For each of $T$ test cases, given $l$ and $r$, print $\sum_{i=l}^{r}ans_i \bmod 10^9 + 7$.
+<br><br>
+Since Suvanth is not a math major, he cannot solve this problem. H e lp Suv anth!
+<br><br>
+<h3>Input</h3>
+The first line contains $T$ ($1 \le T \le 10^5$), the number of independent test cases.<br><br>
+Each of the next $T$ lines contains integers $l$ and $r$ ($1 \le l \le r \le 10^{18}$).
+<h3>Output</h3>
+For each test case, print the answer to the query.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>3
+1 4
+1 100000000000
+1000000000 100000000000</codeblock>
+<b>Sample Output</b><br>
+<codeblock>5
+616001018
+731887141</codeblock>
+<h3>Note</h3>
+$ans_1=1$ because $1 \in F$.<br>
+$ans_2=1$ because $2 \in F$.<br>
+$ans_3=1$ because $3 \in F$.<br>
+$ans_4=2$ because $1+3=4$ and $[1,3] \in F$.<br>
+$\sum_{i=1}^{4}ans_i=5$.
+<br><br>
+Subtask 1: $l=r$
+<br>
+Subtask 2: No additional constraints

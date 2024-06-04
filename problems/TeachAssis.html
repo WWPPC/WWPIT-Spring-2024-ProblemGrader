@@ -1,0 +1,46 @@
+Maitian has just become a teacher's assistant. The classrooms of HSS are represented by $N$ classrooms and $N-1$ corridors, such that you can get from any classroom to any other classroom through corridors. Each corridor has a different length.
+<br><br>
+There are $K$ teachers he must help, all at different classrooms.
+<br><br>
+Classroom $1$ is the entrance. Maitian must start at the entrance of the school, go to each classroom that a teacher needs help with in any order, and exit back at the entrance of the school.
+<br><br>
+Please find the minimum total length he must walk to fulfill the needs of all the teachers.
+<h3>Input</h3>
+The first line contains two integers $N$, $K$ $(1 \le N \le 10^5, 1 \le K \le N)$.
+<br><br>
+The next $N-1$ lines each contain three integers, $a$, $b$, and $w$ $(1 \le a,b \le N, 1 \le w \le 10^9)$ representing a corridor between classrooms $a$ and $b$ of length $w$
+<br><br>
+The next line contains $K$ distinct classrooms $c_1,c_2,...,c_K$ $(1 \le c_i \le N)$, the classrooms that a teacher needs help in.
+<h3>Output</h3>
+Print the minimum total distance Maitian must walk.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>4 2
+1 2 2
+2 3 3
+2 4 1
+3 4</codeblock>
+<b>Sample Output</b><br>
+<codeblock>12</codeblock>
+<h3>Note</h3>
+Maitian must visit both classrooms 3 and 4 to help teachers. Here is his path.
+<br>
+$1 \rightarrow 2$ length: 2
+<br>
+$2 \rightarrow 3$ length: 3
+<br>
+$3 \rightarrow 2$ length: 3
+<br>
+$2 \rightarrow 4$ length: 1
+<br>
+$4 \rightarrow 2$ length: 1
+<br>
+$2 \rightarrow 1$ length: 2
+<br>
+The total length Maitian must walk is $12$.
+<br><br>
+Subtask 1: $N \le 10^3, K \le 20$
+<br>
+Subtask 2: $N \le 10^3$
+<br>
+Subtask 3: No additional constraints

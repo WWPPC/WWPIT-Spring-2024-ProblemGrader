@@ -1,0 +1,31 @@
+Please help Arav solve the problem and pass his number theory class.
+<br><br>
+There is an array $a$ of length $N$. Find the maximum value of $gcf(a_i,a_j)\cdot lcm(a_i,a_j)$ for all $i$, $j$ such that $1 \le i < j \le N$.
+<h3>Input</h3>
+The first line contains $T$, the number of independent test cases.
+<br><br>
+For each test case, the first line contains an integer $N$ $(2 \le N \le 10^5)$.
+<br><br>
+The next line contains the $N$ integers of $a$ $(1 \le a_i \le 10^9)$.
+<br><br>
+It is guaranteed that the sum of $N$ over all testcases is at most $10^6$.
+<h3>Output</h3>
+Output $T$ lines, each containing the answer for that testcase.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>1
+10
+8 1 2 7 12 9 13 14 19 17</codeblock>
+<b>Sample Output</b><br>
+<codeblock>323</codeblock>
+<h3>Note</h3>
+It is optimal to choose $i = 9$ and $j = 10$.
+<br><br>
+$$a_i = 19, a_j = 17$$<br>
+$$gcf(a_i,a_j) = 1, lcm(a_i,a_j) = 323$$<br>
+$$gcf(a_i,a_j)\cdot lcm(a_i,a_j) = 323$$<br>
+This is the highest possible answer over all possible $i$ and $j$.
+<br><br>
+Subtask 1: $a_i \le 10^4$<br>
+Subtask 2: sum of $N$ is at most $10^3$<br>
+Subtask 3: No additional constraints
