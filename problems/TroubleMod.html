@@ -1,0 +1,26 @@
+Maitian has an array $a$ of length $N$. He has been having trouble with mod. To practice his modular skills, he is trying to solve the following problem:
+<br><br>
+Let $s$ be a subsequence of $a$. Let $p$ be maximum value of the $gcf(s_1,s_2,...)\cdot lcm(s_1,s_2,...)$.
+Find $p \bmod 10^9+7$.
+<br><br>
+A sequence $b$ is a subsequence of $a$ if $b$ can be obtained from $a$ by the deletion of several (possibly, zero or all) elements, without changing the order of the remaining elements. For example, $[5,2,3]$ is a subsequence of $[1,5,7,8,2,4,3]$.
+<br><br>
+The GCF and LCM of a single number is itself.
+<h3>Input</h3>
+The first line contains 1 integer $N$ $(1 \le N \le 5\cdot 10^4)$.
+<br><br>
+The next line contains the $N$ integers of $a$ $(1 \le a_i \le 5\cdot 10^4)$.
+<h3>Output</h3>
+Output $p \bmod 10^9+7$ on a single line.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>10
+8 1 2 7 12 9 13 14 19 17</codeblock>
+<br><b>Sample Output</b><br>
+<codeblock>2116296</codeblock>
+<h3>Note</h3>
+The optimal solution is to take the entire array as a subset, making the GCD $1$ and LCM $2116296$. It can be proven that this is the optimal solution.
+<br><br>
+Subtask 1: $N \le 100$
+<br>
+Subtask 2: No additional constraints

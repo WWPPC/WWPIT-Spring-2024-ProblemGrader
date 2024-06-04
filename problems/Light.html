@@ -1,0 +1,43 @@
+Arav has a bug in his code that he is unable to fix, so he asks the other WWPIT organizers for help. However, they are all unable to help him because Arav uses light mode and the screen blinds them. You are tasked to reduce the brightness of his screen.
+<br><br>
+Arav's computer screen can be represented by a grid of $N$ by $M$ pixels with brightness values. Any pixel with a brightness of $0$ is dark; otherwise, it is light. The screen is <i>blinding</i> if $> K$ pixels are light.
+<br><br>
+In one operation, you can swap 2 adjacent pixels in the screen or decrease the brightness of the pixel in the top left, top right, bottom left, or bottom right by $1$.
+<br><br>
+Find the minimum number of operations you need to do for the screen to be not blinding.
+<h3>Input</h3>
+The first like of input is $N$, $M$, $K$ $(1 \le N,M \le 10^3, 0 \le K \le NM)$
+
+The next $N$ lines each contain $M$ numbers $x_1,x_2,...,x_M$, the brightness values for the pixels in the current row $(0 \le x_i \le 10^9)$
+<h3>Output</h3>
+Output a single integer, the minimum number of operations.
+<br><br>
+<b>Sample Input</b>
+<codeblock>3 3 0
+0 0 1
+0 2 0
+1 0 0</codeblock>
+<b>Sample Output</b>
+<codeblock>6</codeblock>
+<h3>Note</h3>
+Since $K=0$, we must make all the pixels dark. This is the operation sequence:
+<br><br>
+Operation 1: decrease the bottom left pixel by 1
+<br>
+Operation 2: decrease the top right pixel by 1
+<br>
+Operation 3: swap the middle pixel with the one on the left
+<br>
+Operation 4: swap the left middle pixel with the top left one
+<br>
+Operation 5: decrease the top left pixel by 1
+<br>
+Operation 6: decrease the top left pixel by 1
+<br><br>
+In total it takes 6 operations to make all the pixels dark. It can be shown this is the minimum.
+<br><br>
+Subtask 1: $N\cdot M \le 100$
+<br>
+Subtask 2: $x_i \le 1$
+<br>
+Subtask 3: No additional constraints

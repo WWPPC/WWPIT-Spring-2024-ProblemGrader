@@ -1,0 +1,36 @@
+Elon Musk is planning on sending a group of scientists to Mars on his rocket. He needs your help with an optimization problem.
+<br><br>
+The rocket can carry at most $W$ kg. There are $N$ scientists, each with intelligence $s_i$ and weight $p_i$ kg. There are $M$ meals, each with weight $f_i$ kg. Each meal will feed the entire crew for $1$ day. The rocket (and all the scientists) must return back to Earth before a day that a scientist would have no food.
+<br><br>
+The amount of work that a scientist does is their intelligence $s_i \cdot d$, where $d$ is the number of meals brought. Find the maximum work that all the scientists can do combined. You are allowed to pack the rocket with as many scientists and meals as you want as long as their total mass does not exceed $W$ kg.
+<h3>Input</h3>
+The first line contains integers $N$, $M$, and $W$ $(1 \le N,M,W \le 10^4)$
+<br>
+The next $N$ lines each contain two integers, $s_i$ and $p_i$ $(1 \le s_i \le 10^9)$ $(1 \le p_i \le W)$ the intelligence and weight of the $i$th scientist.
+<br>
+The next line contains $M$ integers, $f_1,f_2,\dots f_M$ $(1 \le f_i \le W)$.
+<h3>Output</h3>
+Output $1$ integer, the maximum total work done by the scientists.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>5 6 50
+4 5
+2 1
+12 20
+5 7
+6 8
+2 9 8 4 5 12</codeblock>
+<b>Sample Output</b><br>
+<codeblock>85</codeblock>
+<h3>Note</h3>
+Take foods with weight $2, 9, 8, 4, 5$ with a total weight of $28$. This will feed the scientists for $5$ days.
+<br>
+Take scientists $1, 2, 4, 5$ with a total weight of $21$ and intelligence of $17$.
+<br>
+The total weight of the food and scientists is $28+21 = 49 \le 50$ and the amount of work done is $17 \cdot 5 = 85$.
+<br><br>
+Subtask 1: $N,M,W \le 100$
+<br>
+Subtask 2: $N,M,W \le 1678$
+<br>
+Subtask 3: No additional constraints

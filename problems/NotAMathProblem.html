@@ -1,0 +1,36 @@
+Erik has an array of $N$ integers $x_1,x_2\dots ,x_N$. He makes $Q$ queries of $2$ types:
+<ul>
+<li>$1$ $l_i$ $k_i$, changing index $l_i$ in the array to $k_i$.</li>
+<li> $2$ $l_i$ $r_i$ $k_i$, counting the amount of numbers in range $[l_i,r_i]$ that are divisible by $k_i$.
+</ul>
+Please print the answer to each query of type $2$. 
+<br><br>
+<b>It is guaranteed that all test cases (aside from the sample) are generated randomly.</b>
+<br><br>
+Erik is convinced this is just a math problem, so you have to prove him wrong.
+<h3>Input</h3>
+The first line contains 2 integers $N$ and $Q$ $(1 \le N,Q \le 2\cdot 10^5)$.<br><br>
+The next line contains $N$ integers $x_1,x_2,x_3\dots x_N$ $(1 \le x_i \le 2\cdot 10^5)$.<br><br>
+The next $Q$ lines each contain either $1$ $l_i$ $k_i$ or $2$ $l_i$ $r_i$ $k_i$ $(1 \le l_i \le r_i \le N, 1 \le k_i \le 2\cdot 10^5)$.
+<h3>Output</h3>
+Output an integer on a new line for each query of type $2$, the number of integers in range $[l_i,r_i]$ that are divisible by $k_i$.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>2 4
+4 10
+2 1 2 4
+2 1 1 4
+1 2 8
+2 1 2 4
+</codeblock>
+<b>Sample Output</b><br>
+<codeblock>1
+1
+2
+</codeblock>
+<h3>Note</h3>
+In the first query of type $2$, the queried elements are $[4, 10]$, and there is $1$ element divisible by $4$.<br>
+In the last query of type $2$, the queried elements are $[4, 8]$, and there are $2$ elements divisible by $4$.
+<br><br>
+Subtask 1: $N,Q,k_i,x_i \le 5\cdot 10^3$<br>
+Subtask 2: No additional constraints

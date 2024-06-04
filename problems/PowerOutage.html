@@ -1,0 +1,29 @@
+On Clarksville Road, there are $N$ houses, labeled $1\dots N$. The snowstorm just created a huge power outage and now they need the backup power.
+<br><br>
+There are $M$ backup power supplies. Each power supply will supply power to all houses $h$ in satisfying $(l \le h \le r)$ for a cost of $c$. If a house gets power from more than $1$ power supply, it overheats and explodes, killing the entire road.
+<br><br>
+Find the minimum cost to give power to all houses on the road. If it is not possible, output $-1$.
+<h3>Input</h3>
+The first contains is 2 integers, $N$ and $M$ $(1 \le N \le 10^5, 1 \le M \le 10^5)$.
+<br>
+The next $M$ lines contain 3 integers $l$, $r$, $c$, meaning that the cost to turn on all houses $h$
+$(l \le h \le r)$ is $c$ $(1 \le l \le r \le N)$ $1 \le c \le 10^9$.
+<h3>Output</h3>
+The first line should contain one integer, the minimum cost to give power to all houses. If it is not possible, output $-1$.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>10 3
+1 5 2
+5 10 3
+6 10 10</codeblock>
+<b>Sample Output</b><br>
+<codeblock>12
+</codeblock>
+<h3>Note</h3>
+Note that we cannot turn on both power supplies $1$ and $2$ because house $5$ would explode.
+<br><br>
+Subtask 1: $N \le 20$
+<br>
+Subtask 2: $M \le 10^3$
+<br>
+Subtask 3: No additional constraints

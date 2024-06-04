@@ -1,0 +1,29 @@
+Jie was walking around in HSS when he found a suspicious-looking function with $n$ terms.
+<br><br>
+$f(x, n) = 1x^1+2x^2+3x^3+...+nx^n$
+<br><br>
+Given $n$, $x$, and $m$, find $f(x, n)\bmod m$.
+<h3>Input</h3>
+The first line contains $T$ $(1 \le T \le 10^5)$, the number of testcases.
+<br><br>
+The first and only line of each testcase contains the three integers $n$, $x$, and $m$ $(1 \le n, x \le 10^{18}, 1 \le m \le 10^9)$.
+<h3>Output</h3>
+For each testcase, print the output of the function.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>1
+5 2 100</codeblock>
+<b>Sample Output</b><br>
+<codeblock>58</codeblock>
+<h3>Note</h3>
+$1\cdot 2^1+2\cdot 2^2+3\cdot 2^3+4\cdot 2^4+5\cdot 2^5=258$
+<br>
+$258 = 58 \pmod{100}$
+<br><br>
+Subtask 1: Sum of $n$ is at most $10^5$, $T \le 200$
+<br>
+Subtask 2: $m$ is guaranteed to be prime, $T \le 200$
+<br>
+Subtask 3: $T \le 200$
+<br>
+Subtask 4: No additional constraints

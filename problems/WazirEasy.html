@@ -1,0 +1,17 @@
+A wazir is a chess piece that can move one square orthogonally, but not diagonally. By contrast, a king can move one square orthogonally or diagonally.
+<br><br>
+Maitian and Suvanth are playing a cooperative chess game. On an infinite chessboard, Maitian’s wazir starts at $(x_1, y_1)$, and Suvanth’s king starts at $(x_2, y_2)$. (Note that $x_1$, $x_2$, $y_1$, and $y_2$ may or may not be distinct). On turn $i$, Maitian moves his wazir once, then Suvanth moves his king once, capturing the wazir if possible.
+<br><br>
+The goal of the game for both players is to have the king capture the wazir. What is the minimum number of turns until Suvanth’s king can capture Maitian’s wazir?
+<h3>Input</h3>
+The first and only line of input contains $x_1$, $y_1$, $x_2$, and $y_2 (1 \le x_i, y_i \le 10^6)$.
+<h3>Output</h3>
+Print a single integer: the minimum number of turns until the king can capture the wazir.
+<br><br><b>Sample Input</b><br>
+<codeblock>1 2 4 4</codeblock>
+<b>Sample Output</b><br>
+<codeblock>2</codeblock>
+<h3>Note</h3>
+The wazir moves to $(2,2)$, king to $(3,3)$, wazir to $(2,3)$, and king to $(2,3)$, capturing the wazir.
+<br><br>
+Subtask 1: No additional constraints

@@ -1,0 +1,31 @@
+Maitian and Erik are currently at different positions of a track of length $N$.
+<br><br>
+Each position has 1 cannon, which can be represented by an integer $p_i$, representing the power of the cannon. 
+<br><br>
+In one unit of time, both Maitian and Erik can choose to use the cannon they are on, or not. If they use the cannon, then they can either launch themselves to position $i+p_i$ (given it is on the track) or position $i-p_i$ (given it is on the track).
+<br><br>
+What is the minimum time needed until Maitian and Erik can reunite in the same position?
+<h3>Input</h3>
+The first line contains $N$ $(1 \le N \le 10^5)$.
+<br>
+The next line contains $N$ integers, the power of each cannon, $p_1,p_2,...,p_N$ $(1 \le p_i \le N-1)$.
+<br>
+The next line contains two integers $A$ and $B$ $(1 \le A,B \le N)$, Maitian and Erik's starting positions, respectively.
+<h3>Output</h3>
+Print the minimum time needed for Maitian and Erik to reunite or $-1$ if it is impossible.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>5
+2 3 1 4 1
+1 5
+</codeblock>
+<b>Sample Output</b><br>
+<codeblock>2</codeblock>
+<h3>Note</h3>
+Maitian jumps from position $1$ to $3$, then to $4$. Erik goes from $5$ to $4$, and stays there. Erik and Maitian will both be at $4$. This is the minimum number of moves.
+<br><br>
+Subtask 1: $p_i = 1$
+<br>
+Subtask 2: $N \le 10^3$
+<br>
+Subtask 3: No additional constraints

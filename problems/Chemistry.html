@@ -1,0 +1,35 @@
+Jie is taking his AP Chemistry test, and he needs your help with a problem.
+<br><br>
+You are given a molecular structure (graph) with $N$ atoms (nodes) and $M$ bonds (edges). Each bond is only stable until time $t$.
+<br><br>
+The entire graph is stable as long as there exists at least 2 distinct paths between every pair of nodes. Find the maximum time that the graph is stable for.
+<br><br>
+A path is only valid if they contain no duplicate edges or nodes.<br><br>
+2 paths are distinct if they have a different length or there is a node in one path at a specific point that isn't in the other path at that point
+<h3>Input</h3>
+The first line contains 2 integers $N$ and $M$, $(1 \le N,M \le 10^5)$
+<br><br>
+The next $M$ lines contain 3 integers, $a$, $b$, and $t$ $(1 \le a,b \le 10^5)$ $(1 \le t \le 10^9)$ representing that an edge from $a$ to $b$ is stable for $t$ time.
+<br><br>
+The graph is guaranteed to have no multi-edges or self-loops.
+<h3>Output</h3>
+Output 1 integer, the maximum amount of time the graph is stable for.
+<br><br><b>Sample Input</b><br>
+<codeblock>6 7
+1 2 3
+5 1 9
+3 4 1000000000
+2 3 4
+4 5 7
+5 6 10
+6 3 10</codeblock>
+<b>Sample Output</b><br>
+<codeblock>3</codeblock>
+<h3>Note</h3>
+The graph is a cycle from 1 $\rightarrow$ 2 $\rightarrow$ 3 $\rightarrow$ 4 $\rightarrow$ 5 and back to 1. If any edge is deleted, the graph becomes a line and there is only 1 path between any pair of nodes. The first edge to be deleted is deleted at time 3.
+<br><br>
+Subtask 1: $N,M \le 10$
+<br>
+Subtask 2: $N,M \le 10^3$
+<br>
+Subtask 3: No additional constraints

@@ -1,0 +1,30 @@
+On a tree with $N$ nodes, there are $k$ robots. Robot $i$ is located on node $i$. Each robot wants to get to node $1$, but there are obstacles blocking the way ― themselves.
+<br><br>
+Every turn, the robots can move along an edge. Robots cannot move onto other robots, but all of the moves are executed simultaneously (i.e. a robot can move onto a currently occupied node if the robot that occupies the node moves in the same turn). Once a robot arrives at node $1$, they are teleported into an alternate dimension and disappear from the tree. Multiple robots can arrive at node $1$ in the same turn, but multiple robots cannot arrive at any other node in the same turn.
+<br><br>
+For each $1 \le k \le N$, find the minimum number of turns it will take for all the robots to reach node $1$.
+<h3>Input</h3>
+The first line contains $N$ $(1 \le N \le 2\cdot 10^5)$ - the size of the tree.<br><br>
+The next $N - 1$ lines contains $a$ and $b$, describing an edge between node $a$ and node $b$.
+<h3>Output</h3>
+Output $N$ space-separated integers, the minimum number of turns it will take for all the robots to reach node $1$ for each value of $k$.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>10
+1 8
+1 9
+9 10
+10 3
+10 2
+10 4
+9 5
+9 6
+6 7</codeblock>
+<b>Sample Output</b><br>
+<codeblock>0 3 4 5 5 6 7 7 7 8</codeblock>
+<h3>Note</h3>
+For $k=2$, it takes $3$ turns since node $2$ is already $3$ away from node $1$.
+<br><br>
+Subtask 1: $N \le 10^2$<br>
+Subtask 2: $N \le 10^3$<br>
+Subtask 3: No additional constraints

@@ -54,3 +54,11 @@ War
 WazirEasy
 WazirHard
 ```
+
+Problem Viewer:
+
+Find the problem html's in 
+```cd problems```
+
+View the problems by pasting the html into
+```wwppc.tech/tools/editor```

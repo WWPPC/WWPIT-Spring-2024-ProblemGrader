@@ -1,0 +1,40 @@
+Rishikesh is taking his AP Physics test and he needs help with a problem on it.
+<br><br>
+There is an atom with a bunch of electrons, each with distinct $x$ and $y$ coordinates. The flux of a quadrilateral is defined to be the number of electrons inside of it. Find the sum of flux of every convex quadrilateral whose corners are all electrons.
+<br><br>
+Particles on the edge of a quadrilateral do not count.
+<h3>Input</h3>
+The first line is an integer $N$ $(5 \le N \le 150)$.
+<br><br>
+The next $N$ lines are 2 integers $x$, $y$ $(-10^4 \le x,y \le 10^4)$. All coordinates are guaranteed to be distinct.
+<h3>Output</h3>
+Output 1 integer, the sum of flux of every quadruplet of electrons.<br><br>
+<b>Sample Input</b><br>
+<codeblock>10
+17 -58
+72 -93
+3 -4
+37 81
+8 79
+98 -84
+30 36
+-71 -16
+-16 -58
+76 -57</codeblock>
+<b>Sample Output</b><br>
+<codeblock>159</codeblock>
+<h3>Note</h3>
+Consider the following quadrilateral:
+<br><br>
+$(17,-58)$<br>
+$(37,81)$<br>
+$(8,79)$<br>
+$(-16,-58)$
+<br><br>
+It contains two points $(30,36)$ and $(3,-4)$. The sum of all these counts for every quadrilateral is $111$.
+<br><br>
+Subtask 1: $N \le 10$
+<br>
+Subtask 2: $N \le 50$
+<br>
+Subtask 3: No additional constraints

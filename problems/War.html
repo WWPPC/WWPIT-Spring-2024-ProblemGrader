@@ -1,0 +1,51 @@
+Rishikesh and Arav have been fighting each other for the last $4$ hours. They have finally decided, at last, to settle the war with a series of battles, from soldiers from their armies.
+<br><br>
+Rishikesh has armies of $N$ soldiers, each with a value of $v_i$. Every battle, he will choose exactly $k$ soldiers from a range $v_l,v_{l+1},...,v_{r-1},v_r$ to fight. Since he wants to win the battle, he will choose the $k$ soldiers with maximum strength, where the strength of a group of soldiers is defined by the bitwise AND of all their values.
+<br><br>
+Find the maximum strength of a subset for each of $B$ battles to help Rishikesh defeat Arav.
+<br><br>
+<h3>Input</h3>
+<br>
+The first line contains two integers $N$ and $B$ $(1 \le N,B \le 10^5)$.
+<br><br>
+The next line is $N$ integers $v_1,v_2,...,v_N$ $(0 \le v_i \le 10^5)$, the values of the soldiers.
+<br><br>
+The next $B$ lines are the battles, each in the form of $l$ $r$ $k$, representing a subsequence of $k$ soldiers from $v_l,v_{l+1},...,v_{r-1},v_r$ are going to the battle $(1 \le l \le r \le N, 1 \le k \le r-l+1)$.
+<h3>Output</h3>
+For each of the $B$ battles, find the maximum value of a subset of $k$ soldiers from the given range.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>8 5
+1 5 2 9 12 19 3 10
+1 8 3
+1 8 5
+2 8 3
+4 8 2
+4 8 1</codeblock>
+<br><b>Sample Output</b><br>
+<codeblock>8
+1
+8
+8
+19</codeblock>
+<h3>Note</h3>
+Denote $\&$ as the bitwise AND operation.
+<br>
+Battle 1: $9\&12\&10=8$
+<br>
+Battle 2: $1\&5\&9\&19\&3=1$
+<br>
+Battle 3: $9\&12\&10=8$
+<br>
+Battle 4: $12\&10=8$
+<br>
+Battle 5: $19=19$
+<br>
+It can be proven that all of these are the optimal answers.
+<br>
+<br>
+Subtask 1: $N,B,v_i \le 10^3$
+<br>
+Subtask 2: $N,B,v_i \le 5\cdot 10^4$
+<br>
+Subtask 3: No additional constraints

@@ -1,0 +1,21 @@
+Wiley, a wise, well-paid white-collar worker, wastes his work week writing worthless wemails. 
+<br><br>
+For each $0 \le i \le N-1$, it takes him $a_i$ minutes to write $2^i$ emails, but it also takes $b_i$ minutes to delete $2^i$ emails. For each $0 \le k \le N-1$, what is the minimum number of minutes Wiley can use to write exactly $2^k$ emails?
+<br><br>
+<h3>Input</h3>
+The first line of input contains $N$ ($1 \le N \le 2 \cdot 10^5$).<br>
+The second line of input contains the integers $a_i$ $(1 \le a_i \le 10^9)$.<br>
+The third line of input contains the integers $b_i$ $(1 \le b_i \le 10^9)$.
+<h3>Output</h3>
+Print a space separated list of $N$ integers: The minimum number of minutes Wiley can use to write $2^k$ emails for all $k$ satisfying $0 \le k \le N-1$.
+<br><br>
+<b>Sample Input</b><br>
+<codeblock>3
+4 2 1
+1 1 1</codeblock>
+<b>Sample Output</b><br>
+<codeblock>3 2 1</codeblock>
+<h3>Note</h3>
+The optimal solution for $k=0$ is to write $2^1$ emails, taking $2$ time, then deleting $2^0$ emails, taking $1$ time.<br><br>
+Subtask 1: $N \le 1000$<br>
+Subtask 2: No additional constraints
