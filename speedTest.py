@@ -10,7 +10,7 @@ count = len(solutions)
 print(f"\rFinished {BLUE}0/{count} {RESET}tests",end="")
 data = {}
 for ind,sol in enumerate(solutions):
-    testcases = json.load(open(f"cases/{sol}.json","r"))
+    testcases = json.load(open(f"cases/{sol[:-4]}.json","r"))
     maxT = 0
     for case in testcases:
         input = case["input"]
